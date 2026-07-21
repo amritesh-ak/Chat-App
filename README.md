@@ -2,7 +2,7 @@
 
 A modern MERN-based one-to-one messaging application with secure JWT authentication, image sharing, and a clean, responsive interface.
 
-ConvoX is being developed as a portfolio project to explore full-stack application development, authentication, database design, and real-time communication.
+Conectify is being developed as a portfolio project to explore full-stack application development, authentication, database design, and real-time communication.
 
 ---
 
@@ -61,7 +61,7 @@ Chat-App/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/amritesh-ak/ConvoX.git
+git clone https://github.com/amritesh-ak/Chat-App.git
 cd Chat-App
 ```
 
