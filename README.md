@@ -1,118 +1,185 @@
 # 💬 Chat App
 
-A full-stack **real-time chat application** that allows users to communicate instantly through a clean and responsive interface.
+A modern MERN-based one-to-one messaging application with secure JWT authentication, image sharing, and a clean, responsive interface.
 
-The application uses **Socket.IO** for real-time, bidirectional communication and a modern full-stack architecture with **React, Node.js, Express, and MongoDB**.
+ConvoX is being developed as a portfolio project to explore full-stack application development, authentication, database design, and real-time communication.
+
+---
 
 ## ✨ Features
 
-* 💬 Real-time messaging
-* ⚡ Instant communication using Socket.IO
-* 👤 User authentication
-* 🗨️ One-to-one conversations
-* 🟢 Online user status
-* 📱 Responsive user interface
-* 🗄️ Persistent message and user data
-* 🔐 Secure backend APIs
+- 🔐 JWT-based user authentication
+- 👤 User registration and login
+- 💬 One-to-one messaging
+- 🖼️ Image upload support
+- 🍪 Cookie-based authentication
+- 📱 Responsive React interface
+- 🗄️ MongoDB database integration
+- ⚡ RESTful backend APIs
+
+---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
-* React.js
-* JavaScript
-* Tailwind CSS
-* Axios
+- React.js
+- JavaScript
+- Tailwind CSS
 
 ### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Multer
 
-* Node.js
-* Express.js
-* Socket.IO
-* MongoDB
-* Mongoose
+---
 
 ## 📁 Project Structure
 
-```text
+```
 Chat-App/
-├── frontend/        # React frontend
-├── backend/         # Node.js / Express backend
-├── README.md
-└── .gitignore
+│
+├── chatapp/             # React Frontend
+│
+├── controllers/         # Business logic
+├── middlewares/         # Authentication middleware
+├── models/              # MongoDB models
+├── routes/              # API routes
+├── uploads/             # Uploaded images
+│
+├── config.js
+├── index.js             # Express server
+└── package.json
 ```
 
-## ⚙️ Getting Started
+---
 
-### 1. Clone the repository
+## 🚀 Getting Started
+
+### 1. Clone Repository
 
 ```bash
-git clone git@github.com:Arpit-voice/Chat-app.git
-cd Chat-app
+git clone https://github.com/amritesh-ak/ConvoX.git
+cd Chat-App
 ```
 
-### 2. Install dependencies
+---
 
-Install the required dependencies for both the frontend and backend.
+### 2. Install Backend Dependencies
 
 ```bash
-cd backend
-npm install
-
-cd ../frontend
 npm install
 ```
 
-### 3. Configure Environment Variables
+---
 
-Create a `.env` file in the appropriate backend directory and add the required environment variables.
+### 3. Install Frontend Dependencies
+
+```bash
+cd chatapp
+npm install
+```
+
+---
+
+### 4. Configure Environment Variables
+
+Create a `.env` file inside the backend folder.
+
+Example:
 
 ```env
-MONGO_URL=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-PORT=your_port
+PORT=8005
+
+MONGO_URI=mongodb://127.0.0.1:27017/chatapp
+
+JWT_SECRET=your_secret_key
 ```
 
-Never commit your `.env` file or API credentials to GitHub.
+---
 
-### 4. Run the Application
-
-Start the backend:
+### 5. Start Backend
 
 ```bash
-cd backend
-npm run dev
+npm start
 ```
 
-Start the frontend in another terminal:
+---
+
+### 6. Start Frontend
+
+Open another terminal.
 
 ```bash
-cd frontend
-npm run dev
+cd chatapp
+npm start
 ```
 
-## 🔌 Real-Time Communication
+Frontend:
 
-The application uses **Socket.IO** to establish real-time communication between connected users.
+```
+http://localhost:3000
+```
 
-Messages are transmitted instantly between the client and server without requiring page refreshes, providing a smooth chat experience.
+Backend:
 
-## 🚀 Future Improvements
+```
+http://localhost:8005
+```
 
-* Group chats
-* Message read receipts
-* Typing indicators
-* Image and file sharing
-* Message notifications
-* User profile customization
-* Improved mobile experience
+---
 
-## 👨‍💻 Author
+## 📌 Current Features
 
-**Arpit Soni**
+- User Authentication
+- Secure JWT Login
+- User Registration
+- One-to-One Chat
+- Image Upload
+- MongoDB Integration
+- REST API Architecture
 
-GitHub: `@Arpit-voice`
+---
+
+## 🚧 Planned Features
+
+- ⚡ Real-time messaging using Socket.IO
+- 🟢 Online/Offline Status
+- ⌨️ Typing Indicator
+- ❤️ Message Reactions
+- 📎 File Sharing
+- 📖 Read Receipts
+- 🌙 Dark Mode
+- 👥 Group Chats
+- 🔔 Notifications
+- 🚀 Deployment
+
+---
+
+## 📚 Learning Goals
+
+This project focuses on understanding:
+
+- MERN Stack Architecture
+- REST API Design
+- Authentication & Authorization
+- MongoDB Data Modeling
+- Secure File Uploads
+- Real-Time Communication
+- Production Deployment
+
+---
+
+## 👨‍💻 Developer
+
+**Amritesh Kumar**
+
+B.Tech, IIT (BHU) Varanasi
+
+---
 
 ## 📄 License
 
-This project is intended for educational and portfolio purposes.
+This project is developed for learning, experimentation, and portfolio purposes.
